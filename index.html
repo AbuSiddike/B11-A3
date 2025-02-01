@@ -1,25 +1,385 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Cat's Fair</title>
     <link rel="stylesheet" href="./source/output.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Quicksand:wght@300..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .fontFamily{
+            font-family: "Sora", serif;
+        }
+        .Fontfamily{
+            font-family: "ADLaM Display", serif;
+        }
+    </style>
 </head>
-<body>
+<body class="Fontfamily">
     <header>
-        
+        <!----- Navbar ----->
+        <nav class="bg-[#FFF9F4] fontFamily">
+            <div class="navbar bg-base-100 shadow-sm">
+                <div class="navbar-start gap-1">
+                    <img src="./c1-assets/logo-header.png">
+                    <h1 class="text-[26px] hidden lg:block">Browse <span class="text-[#FFDC26]">4</span> Pets</h1>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="flex gap-5.5 text-xl">
+                    <li><a>Find a Pet</a></li>
+                    <li><a>Breeds</a></li>
+                    <li><a>Contact us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-2.5">
+                    <div class="lg:hidden">
+                        <svg width="22.500000" height="15.000000" viewBox="0 0 22.5 15" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <desc>
+                                    Created with Pixso.
+                            </desc>
+                            <defs/>
+                            <path id="Vector (Stroke)" d="M0 0.93C0 0.41 0.41 0 0.93 0L21.56 0C22.08 0 22.5 0.41 22.5 0.93C22.5 1.45 22.08 1.87 21.56 1.87L0.93 1.87C0.41 1.87 0 1.45 0 0.93ZM0 7.5C0 6.98 0.41 6.56 0.93 6.56L21.56 6.56C22.08 6.56 22.5 6.98 22.5 7.5C22.5 8.01 22.08 8.43 21.56 8.43L0.93 8.43C0.41 8.43 0 8.01 0 7.5ZM0 14.06C0 13.54 0.41 13.12 0.93 13.12L21.56 13.12C22.08 13.12 22.5 13.54 22.5 14.06C22.5 14.58 22.08 15 21.56 15L0.93 15C0.41 15 0 14.58 0 14.06Z" fill="#111111" fill-opacity="1.000000" fill-rule="evenodd"/>
+                        </svg>                    
+                    </div>
+                  <button class="btn btn-ghost btn-circle  hidden lg:flex">
+                    <div class="indicator">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" /> </svg>
+                    </div>
+                  </button>
+                  <button class="hidden lg:flex btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /> </svg>
+                  </button>
+                  <button class="hidden lg:flex btn btn-outline text-xl fontFamily border-[#FFDC26]">Login</button>
+                  <button class="hidden lg:flex btn btn-active text-xl fontFamily bg-[#FFDC26]">Register</button>
+                </div>
+              </div>
+        </nav>
+
+        <!----- Banner Section -----> 
+        <div class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16 min-h-[749px] bg-[url(./../c1-assets/cat-big.png)] bg-contain bg-no-repeat bg-left-bottom">
+            <h1 class="text-5xl font-bold">Pamper Your Pet, <br> Because They Deserve <br> the Bes</h1>
+                <p class="text-xl max-w-2xl font-extralight fontFamily">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+                <button class="btn btn-active blinking-button bg-[#FFDC26] fontFamily text-xl">Find a Pet</button>
+        </div>
     </header>
     <main>
-        <section>
-            <h1 class="text-5xl font-bold">this sskjjcjc</h1>
-    <p class="bg-red-500">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-    <div>
-        <h1 class="text-center">this is a heading</h1>
-        <p class="bg-rose-400">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet ea voluptatibus iure reprehenderit ad quia, odit omnis deserunt quos. Unde!</p>
-    </div>
-    <button class="btn btn-error">hi</button>
+        <!----- Browse By Categories ----->
+        <section class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16">
+            <h1 class="text-4xl font-normal">Browse By Categories</h1>
+            <div class="grid grid-cols-2 sm:grid-cols-3 xl:grid-cols-6 mt-16 gap-6">
+                <div class="bg-[#F9DF8A] px-10 py-6 min-h-64 flex flex-col gap-1 justify-center items-center text-center rounded-xl">
+                    <div class="rounded-full w-fit mb-4 bg-[#FFFFFF] p-4">
+                        <img class="rounded-full" src="./c1-assets/dog-cartoon.png">
+                    </div>
+                    <h4 class="text-xl">Dog</h4>
+                    <p class="fontFamily text-xs">3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] px-10 py-6 min-h-64 flex flex-col gap-1 justify-center items-center text-center rounded-xl">
+                    <div class="rounded-full w-fit mb-4 bg-[#FFFFFF] p-4">
+                        <img class="rounded-full" src="./c1-assets/fish-cartoon.png">
+                    </div>
+                    <h4 class="text-xl">Fish</h4>
+                    <p class="fontFamily text-xs">3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] px-10 py-6 min-h-64 flex flex-col gap-1 justify-center items-center text-center rounded-xl">
+                    <div class="rounded-full w-fit mb-4 bg-[#FFFFFF] p-4">
+                        <img class="rounded-full" src="./c1-assets/cat-cartoon.png">
+                    </div>
+                    <h4 class="text-xl">Cat</h4>
+                    <p class="fontFamily text-xs">3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] px-10 py-6 min-h-64 flex flex-col gap-1 justify-center items-center text-center rounded-xl">
+                    <div class="rounded-full w-fit mb-4 bg-[#FFFFFF] p-4">
+                        <img class="rounded-full" src="./c1-assets/bird-cartoon.png">
+                    </div>
+                    <h4 class="text-xl">Birds</h4>
+                    <p class="fontFamily text-xs">3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] px-10 py-6 min-h-64 flex flex-col gap-1 justify-center items-center text-center rounded-xl">
+                    <div class="rounded-full w-fit mb-4 bg-[#FFFFFF] p-4">
+                        <img class="rounded-full" src="./c1-assets/mouse-cartoon.png">
+                    </div>
+                    <h4 class="text-xl">Small pet</h4>
+                    <p class="fontFamily text-xs">3 items</p>
+                </div>
+                <div class="bg-[#F9DF8A] px-10 py-6 min-h-64 flex flex-col gap-1 justify-center items-center text-center rounded-xl">
+                    <div class="rounded-full w-fit mb-4 bg-[#FFFFFF] p-4">
+                        <img class="rounded-full" src="./c1-assets/rabbit-cartoon.png">
+                    </div>
+                    <h4 class="text-xl">Rabit</h4>
+                    <p class="fontFamily text-xs">3 items</p>
+                </div>
+            </div>
         </section>
+
+        <!----- Trending Pet Products ----->
+         <section class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16">
+            <h1 class="pb-12 text-4xl font-normal">Trending Pet Products</h1>
+            <div class="grid grid-cols-12 gap-7">
+                <div class="bg-[#F9DF8A] col-span-12 sm:col-span-5 px-6 pt-8 rounded-xl">
+                    <div class="min-h-[402px] bg-[url(./../c1-assets/cute-pet-small.png)] bg-no-repeat bg-right-bottom bg-contain rounded-xl">
+                        <h1 class="text-3xl">T-Shirt For Dogs</h1>
+                        <p class="fontFamily text-xl font-extralight">Discover a world of treats, toys, and essentials handpicked for</p>
+                        <button class="btn fontFamily">Shop Now</button>
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-4 sm:grid-cols-3 col-span-12 sm:col-span-7">
+                    <div class="flex items-center gap-2.5 justify-evenly p-4 rounded-md border border-[#1111111A]">
+                        <img src="./c1-assets/dog-cartoon.png">
+                        <ul>
+                            <li class="flex items-center gap-1.5">
+                            <svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>4.5
+                            </li>
+                            <li>Pet Bed</li>
+                            <li>$39.99</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-2.5 justify-evenly p-4 rounded-md border border-[#1111111A]">
+                        <img src="./c1-assets/rabbit-cartoon.png">
+                        <ul>
+                            <li class="flex items-center gap-1.5">
+                            <svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>4.5
+                            </li>
+                            <li>Pet Bed</li>
+                            <li>$39.99</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-2.5 justify-evenly p-4 rounded-md border border-[#1111111A]">
+                        <img src="./c1-assets/fish-cartoon.png">
+                        <ul>
+                            <li class="flex items-center gap-1.5">
+                            <svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>4.5
+                            </li>
+                            <li>Pet Bed</li>
+                            <li>$39.99</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-2.5 justify-evenly p-4 rounded-md border border-[#1111111A]">
+                        <img src="./c1-assets/fish-cartoon.png">
+                        <ul>
+                            <li class="flex items-center gap-1.5">
+                            <svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>4.5
+                            </li>
+                            <li>Pet Bed</li>
+                            <li>$39.99</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-2.5 justify-evenly p-4 rounded-md border border-[#1111111A]">
+                        <img src="./c1-assets/bird-cartoon.png">
+                        <ul>
+                            <li class="flex items-center gap-1.5">
+                            <svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>4.5
+                            </li>
+                            <li>Pet Bed</li>
+                            <li>$39.99</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-2.5 justify-evenly p-4 rounded-md border border-[#1111111A]">
+                        <img src="./c1-assets/pet-couch.png">
+                        <ul>
+                            <li class="flex items-center gap-1.5">
+                            <svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>4.5
+                            </li>
+                            <li>Pet Bed</li>
+                            <li>$39.99</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-2.5 justify-evenly p-4 rounded-md border border-[#1111111A]">
+                        <img src="./c1-assets/bird-cartoon.png">
+                        <ul>
+                            <li class="flex items-center gap-1.5">
+                            <svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>4.5
+                            </li>
+                            <li>Pet Bed</li>
+                            <li>$39.99</li>
+                        </ul>
+                    </div>
+                    <div class="flex items-center gap-2.5 justify-evenly p-4 rounded-md border border-[#1111111A]">
+                        <img src="./c1-assets/pet-couch.png">
+                        <ul>
+                            <li class="flex items-center gap-1.5">
+                            <svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>4.5
+                            </li>
+                            <li>Pet Bed</li>
+                            <li>$39.99</li>
+                        </ul>
+                    </div>
+                    <div class="hidden sm:block items-center gap-2.5 justify-evenly p-4 rounded-md border border-[#1111111A]">
+                        <img src="./c1-assets/rabbit-cartoon.png">
+                        <ul>
+                            <li class="flex items-center gap-1.5">
+                            <svg width="18.000061" height="17.973145" viewBox="0 0 18.0001 17.9731" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <desc>
+                                        Created with Pixso.
+                                </desc>
+                                <defs/>
+                                <path id="Vector" d="M17.52 6.42L11.98 5.57L9.5 0.29C9.32 -0.1 8.67 -0.1 8.49 0.29L6.01 5.57L0.47 6.42C0.02 6.49 -0.16 7.04 0.16 7.37L4.18 11.49L3.23 17.31C3.15 17.78 3.64 18.12 4.05 17.9L9 15.16L13.94 17.9C14.34 18.12 14.84 17.78 14.76 17.31L13.81 11.49L17.83 7.37C18.15 7.04 17.97 6.49 17.52 6.42Z" fill="#FFC107" fill-opacity="1.000000" fill-rule="nonzero"/>
+                            </svg>4.5
+                            </li>
+                            <li>Pet Bed</li>
+                            <li>$39.99</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!----- Everyday low Price ----->
+         <section class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16">
+            <h1 class="text-4xl font-normal pb-12">Everyday low Price</h1>
+            <div class="grid grid-cols-12 gap-7">
+                <div class="bg-gradient-to-r from-[#F8CCFB] to-[#ACD2FD] col-span-12 lg:col-span-8 rounded-xl min-h-[500px] pt-32">
+                    <div class="bg-right-bottom bg-origin-border bg-contain bg-[url(./../c1-assets/cute-dog-mid.png)] bg-no-repeat min-h-[480px]">
+                        <ul class="p-8 -mt-28">
+                            <li class="fontFamily text-xl hidden lg:block">Under Price</li>
+                            <li class="text-4xl">Pet Grooming Mitt</li>
+                            <li class="text-2xl text-white hidden lg:block">(Easy Hair Removal)</li>
+                            <li class="text-6xl font-normal">$7.99</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] min-h-[500px] col-span-12 lg:col-span-4 pt-32 rounded-xl">
+                    <div class="bg-right-bottom bg-contain bg-origin-border bg-[url(./../c1-assets/cute-pet-mid.png)] bg-no-repeat min-h-[480px]">
+                        <ul class="p-8 -mt-28">
+                            <li class="text-4xl">T-Shirt for Dogs</li>
+                            <li class="text-6xl text-[#FFDC26]">$7.99</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+         </section>
+
+         <!----- Get Pawsome News! ----->
+         <section class="relative xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16 pb-80 md:pb-20">
+            <div class="absolute xl:right-36 xl:left-36 sm:right-10 sm:left-10 md:right-20 md:left-20 flex justify-evenly items-center gap-4 bg-[#FFF9F4] py-10 px-8 -bottom-80 flex-col md:flex-row">
+                <div>
+                    <img class="w-80 h-96" src="./c1-assets/cute-pet-mid.png">
+                </div>
+                <div>
+                    <h1 class="text-4xl ">Get Pawsome News!</h1>
+                    <p class="text-xl fontFamily">Exclusive training tips, ticks, product deals and more.</p>
+                    <input type="email" placeholder="Enter email....">
+                    <br>
+                    <button class="btn btn-active bg-[#FFDC26] fontFamily text-xl">Subscribe</button>
+                </div>
+            </div>
+         </section>
+
+         <!----- Footer Section ----->
+         <footer class="footer pt-80 bg-[#FFDC2680] sm:footer-horizontal text-base-content p-10 ">
+            <nav>
+              <div class="flex gap-2.5 items-center">
+                <img src="./c1-assets/logo-footer.png">
+                <h1 class="text-2xl">Browse <span class="text-[#FFDC26]">4</span> Pets</h1>
+              </div>
+              <p class="fontFamily">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
+            </nav>
+            <nav class="fontFamily text-[16px]">
+              <ul>
+                <li>Find a Pet</li>
+                <li>Breeds</li>
+                <li>Contact Us</li>
+              </ul>
+            </nav>
+            <nav>
+              <h6 class="footer-title">Follow US</h6>
+              <div class="grid grid-flow-col gap-4">
+                <a>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"></path>
+                  </svg>
+                </a>
+                <a>
+                    <svg width="22.195679" height="22.188965" viewBox="0 0 22.1957 22.189" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                                Created with Pixso.
+                        </desc>
+                        <defs/>
+                        <path id="Vector" d="M6.52 0.06C7.7 0.01 8.08 0 11.09 0C14.11 0 14.48 0.01 15.67 0.06C16.85 0.12 17.66 0.3 18.36 0.58C19.1 0.86 19.77 1.29 20.33 1.86C20.89 2.41 21.33 3.08 21.61 3.82C21.88 4.53 22.07 5.33 22.12 6.51C22.18 7.7 22.19 8.08 22.19 11.09C22.19 14.1 22.18 14.48 22.12 15.66C22.07 16.84 21.88 17.65 21.61 18.36C21.33 19.1 20.89 19.77 20.33 20.32C19.77 20.89 19.1 21.32 18.36 21.6C17.66 21.88 16.85 22.06 15.67 22.12C14.48 22.17 14.11 22.18 11.09 22.18C8.08 22.18 7.7 22.17 6.52 22.12C5.34 22.06 4.53 21.88 3.82 21.6C3.08 21.32 2.41 20.89 1.86 20.32C1.29 19.77 0.86 19.1 0.58 18.36C0.3 17.65 0.12 16.84 0.06 15.66C0.01 14.48 0 14.1 0 11.09C0 8.08 0.01 7.7 0.06 6.52C0.12 5.33 0.3 4.53 0.58 3.82C0.86 3.08 1.29 2.41 1.86 1.86C2.41 1.29 3.08 0.86 3.82 0.58C4.53 0.3 5.34 0.12 6.52 0.06L6.52 0.06ZM15.58 2.06C14.41 2.01 14.06 1.99 11.09 1.99C8.13 1.99 7.78 2.01 6.61 2.06C5.53 2.11 4.94 2.29 4.55 2.44C4.03 2.64 3.66 2.88 3.27 3.27C2.9 3.63 2.62 4.06 2.44 4.55C2.29 4.94 2.11 5.52 2.06 6.61C2.01 7.78 1.99 8.13 1.99 11.09C1.99 14.05 2.01 14.4 2.06 15.57C2.11 16.65 2.29 17.24 2.44 17.63C2.62 18.11 2.9 18.55 3.27 18.91C3.63 19.28 4.07 19.56 4.55 19.74C4.94 19.89 5.53 20.07 6.61 20.12C7.78 20.17 8.13 20.18 11.09 20.18C14.06 20.18 14.41 20.17 15.58 20.12C16.66 20.07 17.25 19.89 17.64 19.74C18.16 19.54 18.53 19.3 18.91 18.91C19.28 18.55 19.57 18.11 19.74 17.63C19.9 17.24 20.08 16.65 20.13 15.57C20.18 14.4 20.19 14.05 20.19 11.09C20.19 8.13 20.18 7.78 20.13 6.61C20.08 5.52 19.9 4.94 19.74 4.55C19.54 4.03 19.3 3.66 18.91 3.27C18.56 2.9 18.12 2.62 17.64 2.44C17.25 2.29 16.66 2.11 15.58 2.06ZM9.68 14.51C10.47 14.84 11.35 14.88 12.17 14.64C12.99 14.39 13.7 13.86 14.18 13.15C14.65 12.44 14.87 11.58 14.78 10.73C14.7 9.87 14.32 9.08 13.71 8.47C13.32 8.09 12.86 7.79 12.34 7.6C11.82 7.42 11.27 7.35 10.73 7.41C10.19 7.46 9.66 7.63 9.19 7.92C8.72 8.2 8.32 8.58 8.02 9.03C7.71 9.49 7.51 10.01 7.43 10.55C7.35 11.09 7.39 11.64 7.55 12.16C7.71 12.69 7.98 13.17 8.35 13.58C8.72 13.98 9.17 14.3 9.68 14.51ZM7.06 7.06C7.59 6.53 8.22 6.11 8.91 5.82C9.6 5.53 10.34 5.39 11.09 5.39C11.84 5.39 12.58 5.53 13.28 5.82C13.97 6.11 14.6 6.53 15.13 7.06C15.66 7.59 16.08 8.22 16.36 8.91C16.65 9.6 16.8 10.34 16.8 11.09C16.8 11.84 16.65 12.58 16.36 13.27C16.08 13.96 15.66 14.59 15.13 15.12C14.06 16.19 12.61 16.79 11.09 16.79C9.58 16.79 8.13 16.19 7.06 15.12C5.99 14.05 5.39 12.6 5.39 11.09C5.39 9.58 5.99 8.13 7.06 7.06ZM18.06 6.24C18.19 6.11 18.3 5.96 18.37 5.8C18.44 5.63 18.48 5.46 18.49 5.27C18.49 5.09 18.45 4.92 18.39 4.75C18.32 4.58 18.22 4.43 18.09 4.3C17.96 4.17 17.81 4.07 17.64 4.01C17.48 3.94 17.3 3.9 17.12 3.91C16.94 3.91 16.76 3.95 16.59 4.02C16.43 4.09 16.28 4.2 16.16 4.33C15.91 4.59 15.78 4.92 15.79 5.27C15.79 5.63 15.93 5.96 16.18 6.21C16.43 6.46 16.77 6.6 17.12 6.6C17.47 6.61 17.81 6.48 18.06 6.24Z" fill="#111111" fill-opacity="1.000000" fill-rule="evenodd"/>
+                    </svg>                    
+                </a>
+                <a>
+                    <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    class="fill-current">
+                    <path
+                      d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z"></path>
+                  </svg>
+                </a>
+                <a>
+                    <svg width="23.101685" height="23.094727" viewBox="0 0 23.1017 23.0947" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <desc>
+                                Created with Pixso.
+                        </desc>
+                        <defs/>
+                        <path id="Vector" d="M11.55 0C5.17 0 0 5.16 0 11.54C0 17.92 5.17 23.09 11.55 23.09C17.93 23.09 23.1 17.92 23.1 11.54C23.1 5.16 17.93 0 11.55 0ZM8.72 16.33L6.38 16.33L6.38 8.8L8.72 8.8L8.72 16.33ZM7.53 7.88C6.8 7.88 6.32 7.36 6.32 6.71C6.32 6.05 6.81 5.54 7.56 5.54C8.32 5.54 8.78 6.05 8.8 6.71C8.8 7.36 8.32 7.88 7.53 7.88ZM17.26 16.33L14.92 16.33L14.92 12.16C14.92 11.19 14.58 10.53 13.74 10.53C13.09 10.53 12.71 10.97 12.54 11.4C12.47 11.56 12.46 11.77 12.46 11.99L12.46 16.33L10.12 16.33L10.12 11.2C10.12 10.26 10.09 9.48 10.06 8.8L12.09 8.8L12.2 9.85L12.24 9.85C12.55 9.36 13.31 8.63 14.57 8.63C16.11 8.63 17.26 9.66 17.26 11.88L17.26 16.33Z" fill="#111111" fill-opacity="1.000000" fill-rule="nonzero"/>
+                    </svg>                    
+                </a>
+              </div>
+            </nav>
+          </footer>
     </main>
 </body>
 </html>

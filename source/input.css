@@ -1,2 +1,12 @@
 @import "tailwindcss";
 @plugin "daisyui";
+@keyframes blink {
+    0% { background-color: yellow; }
+    50% { background-color: white; }
+    100% { background-color: yellow; }
+  }
+  
+  .blinking-button {
+    cursor: pointer;
+    animation: blink 1s infinite;
+  }
