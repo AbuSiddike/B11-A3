@@ -20,7 +20,7 @@
         }
     </style>
 </head>
-<body class="Fontfamily">
+<body class="Fontfamily max-w-screen-2xl mx-auto">
     <header>
         <!----- Navbar ----->
         <nav class="bg-[#FFF9F4] fontFamily">
@@ -280,19 +280,21 @@
          <!----- Adopt a Pet ----->
          <section class="xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16">
             <h1 class="text-4xl text-center pb-14">Animals Available For Adoption Near You</h1>
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10">
-                <div class="bg-gradient-to-r from-sky-300 to-red-400 rounded-xl w-[510px] min-h[480px]">
+            <div class="grid grid-cols-1 justify-items-center lg:grid-cols-2 gap-10">
+                <div class="bg-gradient-to-r from-sky-300 to-red-400 rounded-xl sm:w-[510px]">
                     <img src="./c1-assets/cute-dog-mid.png">
-                    <ul class="bg-rose-100 space-y-2">
+                    <ul class="bg-rose-100 p-3.5 text-center space-y-2">
                         <li class="text-2xl">Tommy</li>
-                        <li class="fontFamily text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                        <li class="fontFamily text-xl">Age : 4 years</li>
+                        <li class="fontFamily text-xl">Male</li>
                     </ul>
                 </div>
-                <div class="bg-gradient-to-r from-purple-300 to-amber-400 rounded-xl w-[510px] min-h[480px]">
+                <div class="bg-gradient-to-r from-purple-300 to-amber-400 rounded-xl sm:w-[510px]">
                     <img src="./c1-assets/cute-dog-mid.png">
-                    <ul class="bg-rose-100 space-y-2">
-                        <li class="text-2xl">Kutush</li>
-                        <li class="fontFamily text-xl">Lorem ipsum dolor sit, amet consectetur adipisicing elit.</li>
+                    <ul class="bg-rose-100 text-center p-3.5 space-y-2">
+                        <li class="text-2xl">Kustush</li>
+                        <li class="fontFamily text-xl">Age : 4 years</li>
+                        <li class="fontFamily text-xl">Male</li>
                     </ul>
                 </div>
             </div>
@@ -324,23 +326,25 @@
          </section>
 
          <!----- Get Pawsome News! ----->
-         <section class="relative xl:mx-36 xl:my-20 p-4 sm:mx-10 sm:my-8 md:mx-20 md:my-16 pb-80 md:pb-20">
-            <div class="absolute xl:right-36 xl:left-36 sm:right-10 sm:left-10 md:right-20 md:left-20 flex justify-evenly items-center gap-4 bg-[#FFF9F4] py-10 px-8 -bottom-80 flex-col md:flex-row">
-                <div>
-                    <img class="w-80 h-96" src="./c1-assets/cute-pet-mid.png">
-                </div>
-                <div>
-                    <h1 class="text-4xl ">Get Pawsome News!</h1>
-                    <p class="text-xl fontFamily">Exclusive training tips, ticks, product deals and more.</p>
-                    <input type="email" placeholder="Enter email....">
-                    <br>
-                    <button class="btn btn-active bg-[#FFDC26] fontFamily text-xl">Subscribe</button>
+         <section class="relative flex justify-center pb-[510px] md:pb-20">
+            <div class="absolute p-6 max-w-[1320px] w-full mx-auto -bottom-96">
+                <div class="bg-[#FFF9F4] flex justify-evenly items-center gap-4 py-10 px-8 flex-col md:flex-row">
+                    <div>
+                        <img src="./c1-assets/cute-pet-mid.png">
+                    </div>
+                    <div class="space-y-4 flex flex-col justify-center items-center md:items-start">
+                        <h1 class="text-4xl ">Get Pawsome News!</h1>
+                        <p class="text-center md:text-left text-xl fontFamily">Exclusive training tips, ticks, product deals and more.</p>
+                        <input class="border-none" type="email" placeholder="Enter email....">
+                        <br>
+                        <button class="btn btn-active bg-[#FFDC26] fontFamily text-xl">Subscribe</button>
+                    </div>
                 </div>
             </div>
          </section>
 
          <!----- Footer Section ----->
-         <footer class="footer pt-80 bg-[#FFDC2680] sm:footer-horizontal text-base-content p-10 ">
+         <footer class="footer pt-[510px] bg-[#FFDC2680] sm:footer-horizontal text-base-content p-10 ">
             <nav>
               <div class="flex gap-2.5 items-center">
                 <img src="./c1-assets/logo-footer.png">
@@ -349,14 +353,14 @@
               <p class="fontFamily">Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
             </nav>
             <nav class="fontFamily text-[16px]">
-              <ul>
+              <ul class="space-y-2.5">
                 <li>Find a Pet</li>
                 <li>Breeds</li>
                 <li>Contact Us</li>
               </ul>
             </nav>
             <nav>
-              <h6 class="footer-title">Follow US</h6>
+              <h6 class="text-lg fontFamily">Follow US</h6>
               <div class="grid grid-flow-col gap-4">
                 <a>
                     <svg
